@@ -1,0 +1,12 @@
+{
+  "name": "Albums",
+  "displayName": "Albums",
+  "expo": {
+    "name": "Albums",
+    "slug": "Albums",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
