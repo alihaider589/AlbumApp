@@ -8,6 +8,8 @@ import {
 } from 'react-native';
 
 import Axios from 'axios'
+import AlbumData from './AlbumDetail'
+import Card from './Card'
 
 export default class MyComponent extends Component {
   state={
@@ -21,7 +23,9 @@ Axios.get('https://rallycoding.herokuapp.com/api/music_albums')
       }
 
       renderAlbums(){
-      return  this.state.albums.map(albums=><Text key={albums.title}>{albums.title}</Text>)
+      return  this.state.albums.map(albums=>
+<AlbumData key={albums.title}  albums={albums}/>
+      )
       }
   render() {
     console.log(this.state)
