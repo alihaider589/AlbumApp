@@ -6,16 +6,18 @@ import AlbumList from './src/Components/Albumlist'
 
 export default function App() {
   return (
-<View >
-<Header headerText={'Albums'}/>
-<AlbumList />
-</View>
+    <View>
+      <Header headerText={'Albums'} />
+      <AlbumList />
+    </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width: '100%',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

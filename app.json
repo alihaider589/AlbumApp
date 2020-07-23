@@ -7,6 +7,8 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "A quick refresher of react native",
+    "githubUrl": "https://github.com/alihaider589/AlbumApp"
   }
 }

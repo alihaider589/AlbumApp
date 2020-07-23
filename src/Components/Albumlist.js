@@ -5,12 +5,12 @@ import {
   View,
   Text,
   StyleSheet,
+  ScrollView
 } from 'react-native';
 
 import Axios from 'axios'
 import AlbumData from './AlbumDetail'
 import Card from './Card'
-
 export default class MyComponent extends Component {
   state={
     albums:[]
@@ -24,15 +24,19 @@ Axios.get('https://rallycoding.herokuapp.com/api/music_albums')
 
       renderAlbums(){
       return  this.state.albums.map(albums=>
+        
+
 <AlbumData key={albums.title}  albums={albums}/>
+        
+
       )
       }
   render() {
     console.log(this.state)
     return (
-      <View style={styles.container}>
+      <ScrollView style={{marginTop:60}}>
     {this.renderAlbums()}
-      </View>
+      </ScrollView>
     );
   }
 }

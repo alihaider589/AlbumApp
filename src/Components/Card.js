@@ -5,11 +5,12 @@ import {
   StyleSheet,
 } from 'react-native';
 
+
 const Card = (props)=>{
   return(
 <View style={styles.container}>
 {props.children}
-</View>
+ </View>
 )
 }
 
@@ -26,7 +27,8 @@ const styles = StyleSheet.create({
     elevation:1,
     marginLeft:5,
     marginRight:5,
-    marginTop:10
+    marginTop:10,
+    width:'100%'
   }
 })
 
