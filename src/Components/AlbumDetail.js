@@ -31,7 +31,9 @@ source={{uri:thumbnail_image}}
         <CardSection>
 <Button 
 onPress={()=>Linking.openURL(url)}
-/>
+>
+  Buy Now
+  </Button>
         </CardSection>
     </Card>
   )
